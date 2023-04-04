@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="1000.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.DeliverymenController">
+   <children>
+      <SplitPane dividerPositions="0.2309491978609626" prefHeight="607.0" prefWidth="1000.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="597.0" prefWidth="205.0" style="-fx-background-color: #00A082;">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="61.0" layoutX="-2.0" layoutY="225.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="227.0" />
+                  <Button layoutX="45.0" layoutY="178.0" mnemonicParsing="false" onAction="#onDashboardClick" style="-fx-background-color: none;" text="Dashboard" textFill="#f5bc31">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="38.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../GDT%20green-03.jpg" />
+                     </image>
+                  </ImageView>
+                  <Line endX="100.0" fill="WHITE" layoutX="113.0" layoutY="148.0" opacity="0.44" startX="-100.0" stroke="WHITE" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeWidth="1.5" />
+                  <Button layoutX="45.0" layoutY="232.0" mnemonicParsing="false" style="-fx-background-color: none;" text="Delivery men" textFill="#00a082">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="45.0" layoutY="280.0" mnemonicParsing="false" onAction="#onOrdersClick" style="-fx-background-color: none;" text="Orders" textFill="#f5bc31">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="45.0" layoutY="331.0" mnemonicParsing="false" onAction="#onProductsClick" style="-fx-background-color: none;" text="Products" textFill="#f5bc31">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Line endX="100.0" fill="WHITE" layoutX="113.0" layoutY="411.0" opacity="0.44" startX="-100.0" stroke="WHITE" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeWidth="1.5" />
+                  <Label layoutX="48.0" layoutY="429.0" text="Logged in as:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="67.0" layoutY="460.0" text="El Mrabet" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="86.0" layoutY="491.0" text="Admin" textFill="#0aff3a">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="15.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icons/icons-04.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="15.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icons/icons-06.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="15.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icons/icons-07.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="15.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icons/icons-05.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="60.0" layoutY="542.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="111.0" style="-fx-background-color: #FF0000;" text="Log out" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="597.0" prefWidth="723.0">
+               <children>
+                  <Label layoutX="264.0" layoutY="115.0" text="Nom :">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <TextField fx:id="nom" layoutX="305.0" layoutY="110.0" prefHeight="28.0" prefWidth="186.0" style="-fx-border-color: #00A082;" />
+                  <Label layoutX="236.0" layoutY="163.0" text="Telephone:">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <TextField fx:id="tele" layoutX="305.0" layoutY="158.0" prefHeight="28.0" prefWidth="186.0" style="-fx-border-color: #00A082;" />
+                  <Button fx:id="ok" layoutX="358.0" layoutY="205.0" mnemonicParsing="false" onAction="#onSaveButtonClick" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #00A082;" text="Save" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Button>
+
+                  <TableView fx:id="mytable" layoutX="148.0" layoutY="248.0" prefHeight="285.0" prefWidth="500.0" stylesheets="@../../../Deliverymenstyle.css">
+                     <columns>
+
+                        <TableColumn fx:id="col_id" prefWidth="70.00001525878906" text="ID" />
+                        <TableColumn fx:id="col_nom" prefWidth="158.0000457763672" text="NAME" />
+                        <TableColumn fx:id="col_tele" prefWidth="269.9999694824219" text="PHONE" />
+                        
+
+
+                     </columns>
+                  </TableView>
+                  <Label layoutX="236.0" layoutY="25.0" text="Delivery man management" textFill="#f5bc31">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="254.0" layoutY="61.0" text="Here you can add, edit and delete delivery people" textFill="#00a082">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="326.0" layoutY="546.0" mnemonicParsing="false" onAction="#deleteSelectedRow" style="-fx-background-color: #ff0000;" text="Delete" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="413.0" layoutY="546.0" mnemonicParsing="false" onAction="#selectedRow" style="-fx-background-color: #2e86f8;" text="Show" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="590.0" layoutY="536.0" mnemonicParsing="false" onAction="#UpdateTable" prefHeight="17.0" prefWidth="57.0" style="-fx-background-color: transparent; -fx-border-color: black;" text="Unselect" textFill="#19071d">
+                     <font>
+                        <Font name="System Bold" size="9.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="idd" layoutX="30.0" layoutY="30.0" style="-fx-opacity: 0;" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</VBox>

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap');
+
+#mytable {
+    -fx-background-color: #fff;
+    -fx-font-family: 'Nunito Sans', sans-serif;
+    -fx-font-size: 12px;
+}
+
+#mytable .column-header-background {
+    -fx-background-color: #F5BC31;
+}
+#mytable .column-header{
+    -fx-background-color: #00A082;
+}
+
+#mytable .column-header .label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #F5BC31;
+}
+
+
+
+#mytable .table-row-cell:even {
+    -fx-font-family: 'Nunito Sans', sans-serif;
+    -fx-background-color: #fff;
+}
+
+#mytable .table-row-cell:selected {
+    -fx-background-color: #00A082;
+    -fx-text-fill: #F5BC31;
+}
